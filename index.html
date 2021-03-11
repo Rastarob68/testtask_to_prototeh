@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testpage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="logout"></div>
+
+        <div class="reguath">
+            <div class="auth">
+                <p>Авторизация</p>
+                <form action="" id="auth" method="POST">
+                    <label for="login_auth">Логин</label>
+                    <input type="text" name="login_auth" id="login_auth" placeholder="Login">
+                    <label for="password_auth">Пароль</label>
+                    <input type="password" name="password_auth" id="password_auth" placeholder="Passwod">
+                    <input type="checkbox" name="not_attach_ip" id="not_attach_ip" checked="checked" style="display: none">
+                    <input name="submit" id="login" type="submit" value="Войти">
+                </form>
+            </div>
+            <div class="reg">
+                <p>Регистрация</p>
+                <form action="reg.php" id="reg" method="POST">
+                    <label for="login_reg">Логин</label>
+                    <input type="text" name="login_reg" id="login_reg" placeholder="Login" required>
+                    <label for="password_reg">Пароль</label>
+                    <input type="password" name="password_reg" id="password_reg" type="password">
+                    <input name="submit" type="submit" value="Регистрация">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="contacts">
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
